@@ -17,8 +17,8 @@
         <td><%= person.name %></td>
         <td><%= person.phone %></td>
         <td><%= link_to 'Mostrar', person %></td>
-        <td><%= link_to 'Editar', edit_person_path(person) %></td>
-        <td><%= link_to 'Apagar', person, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%#= link_to 'Editar', edit_person_path(person) %></td>
+        <td><%#= link_to 'Apagar', person, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

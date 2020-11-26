@@ -1,9 +1,3 @@
-<h1>New Person</h1>
-
-<%= render 'form', person: @person %>
-
-<%= link_to 'Back', people_path %>
-
 <div class="container">
 <div class="row">
   <div class="col-sm-8">
@@ -63,7 +57,12 @@
   <h3>What We Do</h3>
   <br>
   <div class="row">
-    
+
+    <h1>Cadastrar um participante</h1>
+    <%= render 'form', person: @person %>
+
+    <%= link_to 'Voltar', people_path %>
+
   </div>
   <hr>
 </div>
