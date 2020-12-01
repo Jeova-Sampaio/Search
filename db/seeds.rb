@@ -5,3 +5,17 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+puts "Cadastrando participante..."
+
+Person.create!(
+    name: "Jeová Sampaio",
+    phone: "85986327687"
+)
+
+Person.create!(
+    name: "Jorge Lima",
+    phone: "85000000000"
+)
+
+puts "Participantes cadastrados com sucesso!"

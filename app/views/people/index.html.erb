@@ -14,6 +14,8 @@
     <tr>
       <th>Nome</th>
       <th>Telefone</th>
+      <th>#</th>
+
       <th colspan="3"></th>
     </tr>
     
@@ -24,7 +26,7 @@
       <tr>
         <td><%= person.name %></td>
         <td><%= person.phone %></td>
-        <td><%= link_to 'Mostrar', person %></td>
+        <td><%#= link_to 'Mostrar', person %></td>
         <td><%#= link_to 'Editar', edit_person_path(person) %></td>
         <td><%#= link_to 'Apagar', person, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
@@ -36,7 +38,7 @@
 
 <br>
 <div class="container text-center">
-  <%= link_to 'Cadastrar pessoa', new_person_path %>
+  <%= link_to '<button type="button">Cadastrar pessoa</button>'.html_safe, new_person_path %>
 </div>
 
 </div>
